@@ -4,13 +4,12 @@
  *
  * Return: Always 0 (Success)
  */
-int main(void)
-{
-char a;
-for (a = 'a'; a <= 'z' ; +a)
-putchar(a);
-for (a = 'A'; a <= 'Z' ; ++a)
-putchar(a);
-putchar('\n');
-return (0);
+#include <stdio.h>
+int main() {
+char c;
+for (c = 'a'; c <= 'z'; ++c)
+printf("%c ", c);
+for (c = 'A'; c <= 'Z'; ++c)
+printf("%c ", c);
+return 0;
 }
