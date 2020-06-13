@@ -1,4 +1,4 @@
-include <stdio.h>
+#include <stdio.h>
 /**
  * main - Print the numbers to 99 with commas
  *
@@ -21,15 +21,4 @@ putchar(32);
 }
 putchar(10);
 return (0);
-}
-#include <stdio.h>
-
-int main()
-{
-for(int i = 0; i < 100 ; i++){
-
-putchar((i/10)+'0');
-putchar((i%10)+'0');
-printf(", ");
-}
 }
