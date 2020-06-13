@@ -1,13 +1,15 @@
 #include <stdio.h>
 /**
- * main - Print the alphabet
+ * main - Print the numbers
  *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-char a;
-for (a = 'a'; a <= 'z' ; a++)
+int a;
+for (a = 0; a <= 9; a++)
+putchar(a + 48);
+for (a = 'a'; a <= 'f'; a++)
 putchar(a);
 putchar('\n');
 return (0);
