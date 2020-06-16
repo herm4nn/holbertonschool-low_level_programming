@@ -7,6 +7,6 @@
 int _putchar (int character)
 int main(void)
 {
-  _putchar("\n""Holberton");
-  return (0);
+_putchar("\n""Holberton");
+return (0);
 }
