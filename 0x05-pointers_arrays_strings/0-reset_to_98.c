@@ -6,14 +6,24 @@
  *
  * Return: Always 0.
  */
-<<<<<<< HEAD
-int main (void reset_to_98(int *ptr));
+void swap(int*, int*);
 
-{
-  int *ptr;
-
- 
-=======
 int main(void)
 {
->>>>>>> 8319b1765157c001dcf695e4129784e145a17d50
+int x, y;
+printf("Enter the value of x and y\n");
+scanf("%d%d", &x, &y);
+printf("Before Swapping\nx = %d\ny = %d\n", x, y);
+swap(&x, &y);
+printf("After Swapping\nx = %d\ny = %d\n", x, y);
+return (0);
+}
+/**Swap function definition*/
+void swap(int *a, int *b)
+{
+int t;
+
+t  = *b;
+*b = *a;
+*a = t;
+}
