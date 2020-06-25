@@ -8,12 +8,17 @@ ulien@ubuntu:~/0x05$ cat 1-main.c
 		* Return: Always 0.
 		*/
 
-void swap_int (int *a, int *b)
+int main()
 {
+  int a, b;
 
-  int temp;
-  temp = *a;
-  *a = *b;
-  *b = temp;
+  printf("Input two integers (a & b) to swap\n");
+  scanf("%d%d", &a, &b);
 
+  a = a + b;
+  b = a - b;
+  a = a - b;
+
+  printf("a = %d\nb = %d\n",a,b);
+  return 0;
 }
